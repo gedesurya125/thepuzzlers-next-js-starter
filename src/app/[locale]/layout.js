@@ -5,13 +5,13 @@ import './globals.css';
 // External Components
 import { NextThemeUiProvider, Paragraph } from 'theme/components';
 // TODO SETUP NAVIGATION
-// import { Navigation } from 'sections/navigation/Navigation';
 import { draftMode } from 'next/headers';
 import { Z_INDEX } from 'constants/zIndex';
 import { Matomo } from 'components/MatomoProvider';
 import { getBaseUrl } from 'helper/getBaseUrl';
 import { locales } from 'config';
 import { Suspense } from 'react';
+import { Navigation } from 'components/navigation/Navigation';
 
 const font_abc_arizona_mix_regular = localFont({
   src: '../../theme/fonts/raw/ABCArizonaMix-Regular.woff',
@@ -58,7 +58,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           />
         </Suspense>
         <NextThemeUiProvider>
-          {/* <Navigation locale={locale} /> */}
+          <Navigation locale={locale} />
           {children}
         </NextThemeUiProvider>
         {isDraftModeEnabled && <DraftLabel />}
