@@ -9,12 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@rive-app/react-canvas": "^4.11.3",
+    "@socialgouv/matomo-next": "^1.9.0",
+    "@theme-ui/mdx": "^0.16.2",
+    "@thepuzzlers/pieces": "^0.2.2",
+    "gsap": "./gsap-bonus-beta.tgz",
+    "hyphenated": "^1.2.0",
+    "hyphenated-de": "^1.2.0",
+    "next": "14.2.4",
+    "next-intl": "^3.15.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.4"
+    "theme-ui": "^0.16.2"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "eslint-config-next": "14.2.4",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.2"
   }
 }
