@@ -2,7 +2,7 @@
 
 //? this is place where store the static page routeNames.
 export const ROUTE_NAMES = {
-  aboutUs: '/ueber-uns'
+  aboutUs: '/about'
 };
 
 //? this is place where we store the dynamic page routeNames

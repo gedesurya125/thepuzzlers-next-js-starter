@@ -1,14 +1,17 @@
-import { Box, Heading } from 'theme/components';
+import { Box, GridWrapper, Heading, Section } from 'theme/components';
 
 export default function Home() {
   return (
     <Box as="main">
-      <Heading
-        sx={{
-          variant: 'text.primary-135-normal'
-        }}>
-        Hello
-      </Heading>
+      <Section>
+        <Heading
+          sx={{
+            variant: 'text.primary-135-normal',
+            gridColumn: ['1/13']
+          }}>
+          Hello asdf asdf asdf asdf asdf
+        </Heading>
+      </Section>
     </Box>
   );
 }

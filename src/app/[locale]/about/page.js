@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const page = async ({ params }) => {
+export default async function Page({ params }) {
   return <div>page: {params?.locale}</div>;
-};
+}
